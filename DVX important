@@ -11,7 +11,7 @@ username: administrator@datrium.local and Password: sha1c0w
 esx hosts:
 username: root and password: sha1c0w
 -------------------------------------------------
-Ditto creation commands:3
+Ditto creation commands:3 commands
 cd /da/main/Prod/Test
 
 python dva.py -v create /var/tmp/santosh --testbed medium_dittos --jenkins http://jenkins.datrium.com/job/build-main-5.1.x/272/ --buildtype Release
@@ -19,10 +19,10 @@ python dva.py -v create /var/tmp/santosh --testbed medium_dittos --jenkins http:
 python dva.py -v start /var/tmp/santosh	
 -------------------------------------------------
 
-after creating testbed, to view floating ip's of various components of a VM:
+after creating testbed, to  view floating ip's of various components of a VM:
 
 vm list dvx_system_name
-eg: vm list skumar
+eg: vm list asingh 
 
 -------------------
 Latest ditto: skumar
@@ -34,12 +34,13 @@ Latest ditto: skumar
    10.80.9.32  on   2019-08-21  n1382-mgmt       skumar-santosh..190821002843_vcsa60-0
 -------------------------------
 Development process before creating dittos testbed:
+and is the best!!
 
 first follow developemnt process till ESI toolchain (i,e. execute till fedora/centos command)
 then ssh to your colo vm, and run 3 commands for creating ditto(given above)
 to view ips of components in your vm on dittos, use command: vm list user_name
 ----------------------------------------------
-DVX system CLI:
+DVX system CLI commands:
 
 host IP address: 10.80.82.137 (controller floating IP of skumar VM)
 username: admin
